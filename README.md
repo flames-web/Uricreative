@@ -49,11 +49,11 @@ $ npm run start:prod
 
 <details>
  <summary>ENDPOINTS<summary>
- <details>
- <summary>Books<summary>
+  <details>
+  <summary>Books<summary>
 
- <details>
- <summary>Get books<summary>
+   <details>
+   <summary>Get books<summary>
 
 REQUEST BODY
 
@@ -78,7 +78,7 @@ REQUEST BODY
 Request
 GET {baseUrl}/books/:id
 
-# Path Params
+ Path Params
 
 id:'bookId'
 
@@ -114,7 +114,7 @@ REQUEST BODY
 Request
 Put {baseUrl}/books/:id
 
-# Path Params
+ Path Params
 
 id:'bookId'
 
@@ -132,7 +132,7 @@ REQUEST BODY
 Request
 DELETE {baseUrl}/books/:id
 
-# Path Params
+ Path Params
 
 id:'bookId'
 
