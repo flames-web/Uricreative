@@ -50,7 +50,7 @@ $ npm run start:prod
 <details>
  <summary>ENDPOINTS<summary>
  
- <details>
+  <details>
   <summary>Books<summary>
 
    <details>
@@ -65,9 +65,9 @@ REQUEST BODY
 Request
 GET {baseUrl}/books
 
-  </details>
+   </details>
 
-  <details>
+   <details>
   <summary>Get book<summary>
 
 REQUEST BODY
@@ -138,7 +138,6 @@ id:'bookId'
 
  </details>
 
- <details>
 </details>
 
 ## Test
