@@ -49,7 +49,8 @@ $ npm run start:prod
 
 <details>
  <summary>ENDPOINTS<summary>
-  <details>
+ 
+ <details>
   <summary>Books<summary>
 
    <details>
@@ -64,10 +65,10 @@ REQUEST BODY
 Request
 GET {baseUrl}/books
 
- </details>
+  </details>
 
- <details>
- <summary>Get book<summary>
+  <details>
+  <summary>Get book<summary>
 
 REQUEST BODY
 
@@ -78,11 +79,10 @@ REQUEST BODY
 Request
 GET {baseUrl}/books/:id
 
- Path Params
-
+Path Params
 id:'bookId'
 
- </details>
+  </details>
 
  <details>
  <summary>Create Books<summary>
@@ -98,7 +98,7 @@ REQUEST BODY
 Request
 POST {baseUrl}/books
 
- </details>
+  </details>
 
   <details>
  <summary>Update book<summary>
@@ -114,14 +114,14 @@ REQUEST BODY
 Request
 Put {baseUrl}/books/:id
 
- Path Params
+Path Params
 
 id:'bookId'
 
  </details>
 
   <details>
- <summary>Delete book<summary>
+  <summary>Delete book<summary>
 
 REQUEST BODY
 
@@ -132,7 +132,7 @@ REQUEST BODY
 Request
 DELETE {baseUrl}/books/:id
 
- Path Params
+Path Params
 
 id:'bookId'
 
