@@ -49,7 +49,8 @@ $ npm run start:prod
 
 <details>
 <summary>ENDPOINTS<summary>
-  <details>
+
+<details>
 <summary>Otp</summary>
 
   <details>
