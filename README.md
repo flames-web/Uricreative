@@ -49,86 +49,13 @@ $ npm run start:prod
 
 <details>
 <summary>ENDPOINTS</summary>
-
-<details>
-<summary>Otp</summary>
-
-  <details>
-  <summary>Request Otp</summary>
-
-    AUTHORIZATION
-    Authorization: Bearer <token>
-    <token> : jwt token generated using {baseUrl}/api/login endpoints
-
-
-    Request
-    Post {baseUrl}/api/otp/send
-
-
-
-    Request Body
-
-     {
-      "email":"email@gmail.com",
-
-     }
-
-
-    Response
-    {
-    "otp": "user_otp",
-    "message": "Check Your Email For Verification Code",
-
-    }
-    Errors Codes
-
-    500 - Internal Server Error - Something went wrong on the server side
-
-  </details>
-
-  <details>
-  <summary>Verify Otp</summary>
-
-    AUTHORIZATION
-    Authorization: Bearer <token>
-    <token> : jwt token generated using {baseUrl}/api/login endpoints
-
-
-    Request
-    Post {baseUrl}/api/otp/verify_otp
-
-
-     Request Body
-
-
-     {
-      "email":"email@gmail.com",
-      "otp":"user_otp"
-     },
-
-
-
-
-     Errors Codes
-     401 - Unauthorized
-     500 - Internal Server Error - Something went wrong on the server side
-     200 - OK - Otp verified sucessfully
-
-     Response
-     {
-      "message":"Otp verified sucessfully",
-
-    }
-
-  </details>
-
- </details>
  
-  <!-- <details>
-  <summary>Books<summary>
+ 
+  <details>
+  <summary>Books</summary>
 
    <details>
-   <summary>Get books<summary>
+   <summary>Get books</summary>
 
 REQUEST BODY
 
@@ -142,7 +69,7 @@ GET {baseUrl}/books
    </details>
 
    <details>
-  <summary>Get book<summary>
+  <summary>Get book</summary>
 
 REQUEST BODY
 
@@ -159,7 +86,7 @@ id:'bookId'
   </details>
 
  <details>
- <summary>Create Books<summary>
+ <summary>Create Books</summary>
 
 REQUEST BODY
 
@@ -175,7 +102,7 @@ POST {baseUrl}/books
   </details>
 
   <details>
- <summary>Update book<summary>
+ <summary>Update book</summary>
 
 REQUEST BODY
 
@@ -195,7 +122,7 @@ id:'bookId'
  </details>
 
   <details>
-  <summary>Delete book<summary>
+  <summary>Delete book</summary>
 
 REQUEST BODY
 
@@ -210,8 +137,9 @@ Path Params
 
 id:'bookId'
 
- <!-- </details> -- -->
  </details>
+
+</details>
 
 ## Test
 
