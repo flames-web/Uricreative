@@ -48,7 +48,7 @@ $ npm run start:prod
 ## URICREATIVE ENDPOINTS
 
 <details>
-<summary>ENDPOINTS<summary>
+<summary>Otp</summary>
 
 <details>
 <summary>Otp</summary>
