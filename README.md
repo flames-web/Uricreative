@@ -210,9 +210,8 @@ Path Params
 
 id:'bookId'
 
- </details> -->
-
-</details>
+ <!-- </details> -- -->
+ </details>
 
 ## Test
 
