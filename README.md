@@ -48,9 +48,82 @@ $ npm run start:prod
 ## URICREATIVE ENDPOINTS
 
 <details>
- <summary>ENDPOINTS<summary>
- 
+<summary>ENDPOINTS<summary>
   <details>
+<summary>Otp</summary>
+
+  <details>
+  <summary>Request Otp</summary>
+
+    AUTHORIZATION
+    Authorization: Bearer <token>
+    <token> : jwt token generated using {baseUrl}/api/login endpoints
+
+
+    Request
+    Post {baseUrl}/api/otp/send
+
+
+
+    Request Body
+
+     {
+      "email":"email@gmail.com",
+
+     }
+
+
+    Response
+    {
+    "otp": "user_otp",
+    "message": "Check Your Email For Verification Code",
+
+    }
+    Errors Codes
+
+    500 - Internal Server Error - Something went wrong on the server side
+
+  </details>
+
+  <details>
+  <summary>Verify Otp</summary>
+
+    AUTHORIZATION
+    Authorization: Bearer <token>
+    <token> : jwt token generated using {baseUrl}/api/login endpoints
+
+
+    Request
+    Post {baseUrl}/api/otp/verify_otp
+
+
+     Request Body
+
+
+     {
+      "email":"email@gmail.com",
+      "otp":"user_otp"
+     },
+
+
+
+
+     Errors Codes
+     401 - Unauthorized
+     500 - Internal Server Error - Something went wrong on the server side
+     200 - OK - Otp verified sucessfully
+
+     Response
+     {
+      "message":"Otp verified sucessfully",
+
+    }
+
+  </details>
+
+ </details>
+ 
+  <!-- <details>
   <summary>Books<summary>
 
    <details>
@@ -136,7 +209,7 @@ Path Params
 
 id:'bookId'
 
- </details>
+ </details> -->
 
 </details>
 
